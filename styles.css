@@ -1,0 +1,98 @@
+/**** Main styles used throughout the page ****/
+:root{
+--raisin-black-2: hsl(245, 16%, 16%);
+--raisin-black-1: hsl(244, 17%, 19%);
+--majorelle-blue: hsl(245, 67%, 59%);
+--ghost-white-1: hsl(240, 100%, 99%);
+--ghost-white-2: hsl(228, 50%, 96%);
+--white-opacity: hsla(0, 0%, 100%, 0.5);
+--independence: hsl(245, 17%, 27%);
+--lavender-web: hsl(247, 69%, 95%);
+--eerie-black: hsl(210, 11%, 15%);
+--cool-gray: hsl(244, 17%, 61%);
+--sapphire: hsl(211, 100%, 35%);
+--white: hsl(0, 0%, 100%);
+--ff-quicksand: "Quicksand", sans-serif;
+--ff-mulish: "Mulish", sans-serif;
+--fs-1: 36px;
+--fs-2: 28px;
+--fs-3: 20px;
+--fs-4: 17px;
+--fs-5: 16px;
+--fs-6: 15px;
+--fs-7: 14px;
+--fw-500: 500;
+--fw-600: 600;
+--fw-700: 700;
+--transition: 0.25s ease;
+--section-padding: 80px;
+}
+
+/**** Reused Styles ****/
+
+.container {
+    padding-inline:15px;
+}
+
+
+/**** Reset ****/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/**** Global Selectors ****/
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration:none;
+}
+
+/**** Header Section ****/
+
+.header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background: var(--white);
+    box-shadow: 0 1px 2px hsla(0,0%,0%,0.05);
+    padding-block:20px;
+    transition: 0.5s ease-in-out;
+    height:70px;
+    overflow:hidden;
+    z-index:4;
+}
+
+.header.active {
+    height:330px;
+}
+
+.header .container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle-button {
+    font-size:2rem;
+}
+
+.navbar {
+    position:absolute;
+    top:64px;
+    visibility:hidden;
+    opacity:0;
+    width:100%;
+    transition:0.5s ease-in-out;
+    padding-inline:30px;
+}
+
+.shown {
+    visibility: visible;
+    opacity:1;
+}
