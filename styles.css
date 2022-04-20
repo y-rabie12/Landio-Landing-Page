@@ -44,12 +44,14 @@
 }
 
 /**** Global Selectors ****/
-li {
-    list-style-type: none;
+a,button {
+    text-decoration: none;
+    border:none;
+    display:block;
 }
 
-a {
-    text-decoration:none;
+li {
+    list-style-type: none;
 }
 
 /**** Header Section ****/
@@ -60,39 +62,108 @@ a {
     left:0;
     width:100%;
     background: var(--white);
-    box-shadow: 0 1px 2px hsla(0,0%,0%,0.05);
-    padding-block:20px;
+    padding-block: 20px;
+    height: 70px;
     transition: 0.5s ease-in-out;
-    height:70px;
-    overflow:hidden;
-    z-index:4;
 }
 
+/*Only when the header and the active classes are present do we add a height of 330px*/
 .header.active {
-    height:330px;
+    height:335px;
 }
 
 .header .container {
     display:flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-.menu-toggle-button {
-    font-size:2rem;
+    align-items:center;
 }
 
 .navbar {
     position:absolute;
-    top:64px;
-    visibility:hidden;
-    opacity:0;
     width:100%;
-    transition:0.5s ease-in-out;
-    padding-inline:30px;
+    top:64px;
+    visibility: hidden;
+    opacity: 0;
+    padding-inline:8px;
+    transition: 0.5s ease-in-out;
 }
 
-.shown {
+/* When the haeder and active classes are present , only then do you add the to the navbar class the following
+ properties*/
+.header.active .navbar {
     visibility: visible;
-    opacity:1;
+    opacity: 1;
 }
+
+
+.nav-link, .nav-action-link {
+    font-size:1.2rem;
+    font-family: var(--ff-mulish);
+    color:var(--cool-gray);
+    padding-block:8px;
+}
+
+.btn {
+    background-color: transparent;
+    font-size:1.2rem;
+}
+
+
+/**** Home Section ****/
+
+.home-section {
+    padding: 125px 0 var(--section-padding);
+    background: var(--white);
+    max-width:800px;
+}
+
+
+.home-content h1 {
+    font-family: var(--ff-mulish);
+    font-size: 2rem;
+    font-weight: var(--fw-700);
+    line-height:43px;
+    margin-bottom:0.5em;
+}
+
+.home-content p {
+    font-family: var(--ff-quicksand);
+    font-size:1.2rem;
+    font-weight:var(--fw-500);
+    color: var(--cool-gray);
+    margin-bottom: 0.5em;
+}
+
+
+.home-image {
+    width:100%;
+}
+
+form {
+    width:100%;
+    text-align:center;
+}
+.email-input {
+    border:none;
+    font-size:1rem;
+    padding:0.7em;
+    background-color: var(--ghost-white-2);
+    border-radius:5px;
+    width:70%;
+    margin-bottom: 0.5em;
+}
+
+.form-btn{
+    width: 35%;
+    padding:1em;
+    margin:0.5em auto;
+    border-radius:5px;
+    font-size:1rem;
+    font-family: var(--ff-quicksand);
+    font-weight: var(--fw-700);
+    color: var(--white);
+    background-color: var(--majorelle-blue);
+}
+
+
+/**** About Section ****/
