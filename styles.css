@@ -54,6 +54,9 @@ li {
     list-style-type: none;
 }
 
+body {
+    background-color: white;
+}
 /**** Header Section ****/
 
 .header {
@@ -65,6 +68,7 @@ li {
     padding-block: 20px;
     height: 70px;
     transition: 0.5s ease-in-out;
+    z-index:4;
 }
 
 /*Only when the header and the active classes are present do we add a height of 330px*/
@@ -113,7 +117,7 @@ li {
 
 .home-section {
     padding: 125px 0 var(--section-padding);
-    background: var(--white);
+    background: var(--ghost-white-1);
     max-width:800px;
 }
 
@@ -167,3 +171,158 @@ form {
 
 
 /**** About Section ****/
+
+.about-content {
+    margin-bottom: 1rem;
+    max-width: 800px;
+}
+
+.about-icon-container {
+    display:grid;
+    width:60px;
+    height:60px;
+    place-items:center;
+    background-color: var(--lavender-web);
+    border-radius: 5px;
+    margin-bottom:20px;
+
+}
+
+.about-icon-container ion-icon {
+    font-size:2.5rem;
+    color: var(--majorelle-blue);
+}
+
+.why {
+    font-family: var(--ff-mulish);
+    font-size: 1.75rem;
+    font-weight: var(--fw-700);
+    color: #3b3951;
+    margin-bottom: 0.3em;
+}
+
+.why-p{
+    font-size:1rem;
+    margin-bottom: 0.5em;
+    
+}
+
+.feature-p {
+    font-size:0.9rem;
+}
+
+.why-p,.feature-p {
+     font-family: var(--ff-quicksand);
+     font-weight: var(--fw-500);
+     color: #8d8bac;
+}
+
+.learn-btn {
+    width: 30%;
+    max-width: 300px;
+    border: 1px solid var(--majorelle-blue);
+    background: transparent;
+    padding: 1em;
+    border-radius: 5px;
+    color: var(--majorelle-blue);
+    font-family: var(--ff-quicksand);
+    font-weight: var(--fw-700);
+    transition: 0.5s all ease;
+}
+
+.learn-btn:hover {
+    color: var(--white);
+    background-color: var(--majorelle-blue);
+}
+
+
+.about-card{
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    place-items: center;
+    margin-bottom: 20px;
+}
+
+.about-card h2 {
+    font-family: var(--ff-mulish);
+    font-size: 1.25rem;
+    font-weight: var(--fw-700);
+    margin-bottom: 1em;
+}
+
+
+.feature-icon {
+    width: 60px;
+    height:60px;
+    display:grid;
+    place-items: center;
+    font-family: var(--ff-quicksand);
+    font-size: 1.75rem;
+    color: var(--majorelle-blue);
+    background-color: var(--lavender-web);
+    border-radius: 50px;
+    margin-bottom:20px;
+}
+
+/**** Features Section ****/
+
+.features-section {
+    background-color: var(--ghost-white-1);
+    padding-block: var(--section-padding);
+    max-width:800px;
+}
+
+.feature-image {
+    width:100%;
+}
+
+.features-text {
+    text-align:center;
+    margin-bottom: 20px;
+}
+
+.features-text h2 {
+    font-family: var(--ff-mulish);
+    font-size: 1.75rem;
+    font-weight: var(--fw-700);
+    color: #3b3951;
+    margin-bottom: 1em;
+}
+
+.features-text p {
+     font-family: var(--ff-quicksand);
+     font-size: 1rem;
+     font-weight: 400;
+     color: #8d8bac;
+}
+
+
+.creative-p {
+      display:flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap:5px;
+      margin-bottom: 15px;
+}
+
+.creative-p ion-icon {
+    color: var(--majorelle-blue);
+    font-family: var(--ff-quicksand);
+    font-size: 1.25rem;
+}
+
+.creative-p  span {
+    font-family: var(--ff-quicksand);
+    font-size: 1rem;
+    color: #22262a;
+}
+
+.features-card h1 {
+    font-family: var(--ff-mulish);
+    font-weight: var(--fw-700);
+    font-size: 1.75rem;
+    margin-bottom: 0.5em;
+    color: #3b3951;
+}
+
