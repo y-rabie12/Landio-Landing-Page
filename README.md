@@ -1,3 +1,10 @@
 # Landio-Landing-Page
 
-A fully responsive website that is developed using HTML,CSS, and JavaScript. It will still be updated
+This is a fully responsive weibsite that is made using HTML,CSS and JavaScript.
+
+
+# Main Technologies Used:
+
+-
+-
+-
