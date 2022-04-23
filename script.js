@@ -1,14 +1,13 @@
 'use strict';
 
-
-
-
 const pressBtn =  document.querySelector('[data-nav-toggle-button]');
 
-const navBar = document.querySelector('.navbar');
+const header = document.querySelector('.header')
+
 
 pressBtn.addEventListener('click', function(){
-      navBar.classList.toggle('shown')
+      header.classList.toggle('active')
 })
+
 
 
