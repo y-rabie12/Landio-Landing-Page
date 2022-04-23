@@ -92,7 +92,7 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-/* When the haeder and active classes are present , only then do you add the to the navbar class the following
+/* When the header and active classes are present , only then do you add the to the navbar class the following
  properties*/
 .header.active .navbar {
     visibility: visible;
@@ -172,6 +172,7 @@ form {
 
 /**** About Section ****/
 
+
 .about-content {
     margin-bottom: 1rem;
     max-width: 800px;
@@ -185,6 +186,7 @@ form {
     background-color: var(--lavender-web);
     border-radius: 5px;
     margin-bottom:20px;
+    margin-top:20px;
 
 }
 
@@ -326,3 +328,126 @@ form {
     color: #3b3951;
 }
 
+.features-card p {
+    font-family: var(--ff-quicksand);
+    font-size: 1rem;
+    color: #8d8bac;
+    margin-bottom: 0.5em;
+}
+
+.feature-card {
+    display:flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.feature-card ion-icon {
+    font-size: 1.4rem;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    align-self: flex-end;
+}
+
+.read-btn,.buy-btn {
+    margin-top: 1em;
+    display: inline-block;
+    padding:1em;
+    border-radius: 5px;
+    font-family: var(--ff-quicksand);
+    font-weight: var(--fw-600);
+}
+
+.read-btn {
+    background: var(--majorelle-blue);
+    color: var(--white);
+}
+
+.buy-btn {
+    background: var(--lavender-web);
+    color: var(--majorelle-blue);
+}
+
+.features-2 {
+    padding-block: var(--section-padding);
+}
+
+
+/**** News Section ****/
+
+.news-section {
+    padding-block: var(--section-padding) ;
+    max-width: 800px;
+}
+
+.news-section h2 {
+    text-align: center;
+    font-family: var(--ff-mulish);
+    font-size: 1.75rem;
+    line-height: 34px;
+    color: #3b3951;
+    margin-bottom: 0.4em;
+}
+
+.news-p {
+    text-align: center;
+    font-family: var(--ff-quicksand);
+    font-size: 1rem;
+    line-height: 26px;
+    color: #8d8bac;
+    margin-bottom: 0.4em;
+}
+
+.news-cards {
+    width:100%;
+}
+
+.news-card {
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.news-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 0.3em;
+}
+
+.info-card,.date,.person {
+    display:flex;
+    justify-content: flex-start;
+    gap:10px;
+    margin-bottom: 0.4em;
+}
+
+.date,.person {
+    font-family: var(--ff-quicksand);
+    font-size: 1rem;
+    color: #8d8bac;
+}
+
+.news-card h3 {
+    font-family: var(--ff-quicksand);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #3b3951;
+}
+
+.news-card p {
+    font-family: var(--ff-quicksand);
+    font-size:1rem;
+    line-height: 20px;
+    color:#8d8bac;
+    margin-bottom: 0.5em;
+} 
+
+.news-btn {
+    background: transparent;
+    font-size: 1rem;
+    font-family: var(--ff-quicksand);
+    font-weight: var(--fw-600);
+    color: var(--majorelle-blue);
+    display:flex;
+    align-items: center;
+}
