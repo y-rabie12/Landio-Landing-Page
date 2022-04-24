@@ -118,7 +118,6 @@ body {
 .home-section {
     padding: 125px 0 var(--section-padding);
     background: var(--ghost-white-1);
-    max-width:800px;
 }
 
 
@@ -272,7 +271,7 @@ form {
 .features-section {
     background-color: var(--ghost-white-1);
     padding-block: var(--section-padding);
-    max-width:800px;
+  
 }
 
 .feature-image {
@@ -378,7 +377,6 @@ form {
 
 .news-section {
     padding-block: var(--section-padding) ;
-    max-width: 800px;
 }
 
 .news-section h2 {
@@ -451,3 +449,103 @@ form {
     display:flex;
     align-items: center;
 }
+
+
+
+
+/**** Contact Us Section ****/
+
+.contact-section {
+    padding-block: var(--section-padding);
+  
+    background: var(--ghost-white-1);
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-family: var(--ff-mulish);
+    font-weight: var(--fw-700);
+    font-size: 1.75rem;
+    color: #3b3951;
+    margin-bottom: 0.4em;
+}
+
+.contact-section p {
+      text-align: center;
+      font-family: var(--ff-quicksand);
+      font-size: 1rem;
+      color:#8d8bac;
+      margin-bottom: 0.7em;
+}
+.contact-section form {
+    text-align: initial;
+}
+.contact-section label {
+    display: block;
+    font-family: var(--ff-quicksand);
+    font-size: 1rem;
+    margin-bottom: 0.4em;
+}
+
+.contact-section input, textarea {
+    width:100%;
+}
+
+
+
+/**** Responsiveness ****/
+
+
+/*
+     responsive for devices larger than 456px
+*/
+
+@media (min-width:450px){
+
+
+    /***
+      Home
+      Section
+       **/
+    .home-section form { 
+        margin:0;
+        margin-top: 0.5em;
+        text-align: initial;
+    }
+    
+    .home-section form input {
+        width:50%;
+        display: inline-block;
+        margin-right: 0.5em;
+    }
+
+    .form-btn {
+        display: inline-block;
+        padding: 0.7em;
+    }
+
+
+     /***
+      About
+      Section
+       **/
+
+    .about-card {
+        max-width: 300px;
+        margin-inline: auto;
+    }
+    
+
+}
+
+
+/**
+ * responsive for devices  larger than 576px screen
+ */
+
+ @media (min-width:576px){
+     .container{
+         max-width:525px;
+         margin-inline: auto;
+     }
+ }
