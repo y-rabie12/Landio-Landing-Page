@@ -491,7 +491,81 @@ form {
     width:100%;
 }
 
+.send-btn {
+    padding:1em;
+    margin-block: 10px;
+    background: var(--majorelle-blue);
+    color: white;
+    font-family: var(--ff-quicksand);
+    font-weight: var(--fw-600);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
+.contact-list a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--ff-quicksand);
+    font-size: 1rem;
+    margin-bottom: 0.4em;
+
+}
+
+
+footer {
+    background: var(--raisin-black-1);
+    color: white;
+}
+
+.footer-logo {
+    margin-bottom:20px;
+}
+
+.footer-p {
+    font-family: var(--ff-quicksand);
+    font-size: 1rem;
+    margin-bottom: 1em;
+    color: #8d8bac;
+}
+
+.social-media {
+    display:flex;
+    align-items: center;
+    gap:10px;
+    margin-bottom:20px;
+}
+.social-media li {
+    font-family: var(--ff-quicksand);
+    font-size: 1.5rem;
+    color: #8d8bac;
+
+}
+
+:is(.about-us,.support,.customers) h3 {
+    font-family: var(--ff-mulish);
+    font-weight: var(--fw-700);
+    color: white;
+    font-size:1rem;
+    margin-bottom: 0.4em;
+}
+
+:is(.about-us,.customers,.support){
+    margin-bottom:1em;
+}
+
+:is(.about-us,.customers,.support) li {
+    font-family: var(--ff-quicksand);
+    font-size: 1rem;
+    color:#8d8bac;
+}
+
+.footer-bottom {
+    background: var(--raisin-black-2);
+    padding:20px;
+    text-align: center;
+}
 
 /**** Responsiveness ****/
 
